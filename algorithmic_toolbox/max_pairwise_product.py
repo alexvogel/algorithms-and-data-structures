@@ -11,7 +11,7 @@ def maxPairwiseProductFast(numbers):
     
     return numbers[0] * numbers[1]
 
-def maxPairwiseProduct(numbers):
+def maxPairwiseProductNaive(numbers):
 
     result = 0
 
@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
             print(a)
 
-            res1 = maxPairwiseProduct(a)
+            res1 = maxPairwiseProductNaive(a)
             res2 = maxPairwiseProductFast(a)
 
             if(res1 != res2):
