@@ -205,6 +205,12 @@ if __name__ == "__main__":
     else:
         input = sys.stdin.read()
         n, *a = list(map(int, input.split()))
+        
+        # to check the coursera - algorithmic toolbox grader, I use the build in function in python for sorting
+        #a = sorted(list(a))
+        
+        # instead of my own improved quicksort function
         randomized_quick_sort(2, a, 0, n - 1)
+        
         for x in a:
             print(x, end=' ')
