@@ -22,13 +22,9 @@ def get_change_dynamic_programming(money):
 
     # loop over denominations
     for denomination in denominations:
-#        print('denom ' + str(denomination))
         for i in range(0, len(T)):
-#            print('  ' + str(i))
             if i >= denomination:
-#                print(str(i) + ' is >= than ' + str(denomination))
                 T[i] = min(T[i], 1 + T[i - denomination])
-#                print('min(T[i], 1+T[i-denomination]) => T[i]=' + str(T[i]) + ', denomination=' + str(denomination) + ' T[i-denomination]=' + str(T[i - denomination]))
 
     # the result is the amount of copins for the money
     return T[money]
