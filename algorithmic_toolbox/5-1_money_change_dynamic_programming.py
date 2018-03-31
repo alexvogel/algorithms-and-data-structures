@@ -17,16 +17,25 @@ def get_change_dynamic_programming(money):
     # this definition is important, because all other calculations base on this number
     T[0] = 0
 
-    # create a list for last used coins
-    coinused = [-1] * money
+    # create a list for the used coins
+    R = [-1] * (money + 1)
 
     # loop over denominations
-    for denomination in denominations:
+    for j in range(0, len(denominations)):
         for i in range(0, len(T)):
-            if i >= denomination:
-                T[i] = min(T[i], 1 + T[i - denomination])
+            if i >= denominations[j]:
+                T[i] = min(T[i], 1 + T[i - denominations[j]])
+                R[i] = j
 
-    # the result is the amount of copins for the money
+    # print the used coins
+    # start = len(R) - 1
+    # while start != 0:
+
+    #     j = R[start]
+    #     print( denominations[j] )
+    #     start = start - denominations[j]
+
+    # the result is the amount of coins for the money
     return T[money]
 
 
