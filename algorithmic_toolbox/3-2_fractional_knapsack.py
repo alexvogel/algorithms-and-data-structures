@@ -47,7 +47,7 @@ if __name__ == "__main__":
     version = '0.1'
     date = '2018-03-05'
 
-    parser = argparse.ArgumentParser(description='calculate the optimal value - fractional knapsack problem',
+    parser = argparse.ArgumentParser(description='calculate the optimal value - fractional knapsack problem with repetitions',
                                      epilog='author: alexander.vogel@prozesskraft.de | version: ' + version + ' | date: ' + date)
     parser.add_argument('--stresstest', action='store_true',
                        help='perform a stress test')
