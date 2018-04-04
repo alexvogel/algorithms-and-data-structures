@@ -4,7 +4,7 @@ import random
 import sys
 import datetime
 import string
-#import pandas as pd
+import pandas as pd
 
 def edit_distance(s, t, solutiontable=False):
 
