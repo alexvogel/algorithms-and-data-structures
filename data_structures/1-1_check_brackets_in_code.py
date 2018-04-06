@@ -1,24 +1,21 @@
 # Uses python3
 import argparse
-import random
 import sys
 import datetime
 
-import sys
+# class Bracket:
+#     def __init__(self, bracket_type, position):
+#         self.bracket_type = bracket_type
+#         self.position = position
 
-class Bracket:
-    def __init__(self, bracket_type, position):
-        self.bracket_type = bracket_type
-        self.position = position
-
-    def Match(self, c):
-        if self.bracket_type == '[' and c == ']':
-            return True
-        if self.bracket_type == '{' and c == '}':
-            return True
-        if self.bracket_type == '(' and c == ')':
-            return True
-        return False
+#     def Match(self, c):
+#         if self.bracket_type == '[' and c == ']':
+#             return True
+#         if self.bracket_type == '{' and c == '}':
+#             return True
+#         if self.bracket_type == '(' and c == ')':
+#             return True
+#         return False
 
 
 def check_brackets_in_code(text):
