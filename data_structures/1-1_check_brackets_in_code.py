@@ -3,19 +3,20 @@ import argparse
 import sys
 import datetime
 
-# class Bracket:
-#     def __init__(self, bracket_type, position):
-#         self.bracket_type = bracket_type
-#         self.position = position
+class Bracket:
+    def __init__(self, bracket_type, position):
+        self.bracket_type = bracket_type
+        self.position = position
 
-#     def Match(self, c):
-#         if self.bracket_type == '[' and c == ']':
-#             return True
-#         if self.bracket_type == '{' and c == '}':
-#             return True
-#         if self.bracket_type == '(' and c == ')':
-#             return True
-#         return False
+    def match(self, c):
+        # print('i am a ' + self.bracket_type)
+        if self.bracket_type == '[' and c == ']':
+            return True
+        if self.bracket_type == '{' and c == '}':
+            return True
+        if self.bracket_type == '(' and c == ')':
+            return True
+        return False
 
 
 def check_brackets_in_code(text):
@@ -28,7 +29,8 @@ def check_brackets_in_code(text):
         if character == '(' or character == '[' or character == '{':
 
             # put the opening-bracket-character on the stack
-            opening_brackets_stack.append(i)
+            open_bracket = Bracket(character, i+1)
+            opening_brackets_stack.append(open_bracket)
 
         # if the current character is a closing bracket
         if character == ')' or character == ']' or character == '}':
@@ -36,37 +38,22 @@ def check_brackets_in_code(text):
             if len(opening_brackets_stack) == 0:
                 return i+1
 
-            matchBracket = None
-            
-            if character == ')':
-                matchBracket = '('
-
-            elif character == ']':
-                matchBracket = '['
-
-            elif character == '}':
-                matchBracket = '{'
-
-            else:
-                print('ERROR')
-                sys.exit(1)
-
             # if last opening bracket matches the closing bracket, remove the opening bracket from stack
-            if text[opening_brackets_stack[-1]] == matchBracket:
+            if opening_brackets_stack[-1].match(character):
                 # print('closing bracket fits last opening bracket')
-                # print('last opening bracket was ' + str(text[opening_brackets_stack[-1]]))
+                # print('last opening bracket was ' + opening_brackets_stack[-1].bracket_type)
                 opening_brackets_stack.pop()
 
             # if the last opening bracket does not match the closing bracket, return current position
             else:
                 # print('closing bracket does not fit last opening bracket')
-                # print('last opening bracket was ' + str(text[opening_brackets_stack[-1]]))
+                # print('last opening bracket was ' + opening_brackets_stack[-1].bracket_type)
                 return i+1
 
     # if whole text has been processed, but opening brackets remained in the stack, return the position of the first remaining opening bracket
     if len(opening_brackets_stack) > 0:
         # print('some opening brackets remained')
-        return opening_brackets_stack[0] + 1
+        return opening_brackets_stack[0].position
 
     return 'Success'
 
