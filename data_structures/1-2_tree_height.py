@@ -6,8 +6,6 @@ import sys, threading
 sys.setrecursionlimit(10**7) # max depth of recursion
 threading.stack_size(2**27)  # new thread will get stack of such size
 
-levels = {}
-
 class Node:
 
     # constructor
