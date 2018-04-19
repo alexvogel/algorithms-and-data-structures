@@ -73,3 +73,55 @@ if __name__ == "__main__":
         print(len(summands))
         for x in summands:
             print(x, end=' ')
+
+
+
+# original programming assignment
+
+'''
+### 3.5 Maximum Number of Prizes
+
+#### Problem Introduction
+You are organizing a funny competition for children. As a prize fund you have n candies. You would like to use these candies for top k places in a competition with a natural restriction that a higher place gets a larger number of candies.
+To make as many children happy as possible, you are going to find the largest value of k for which it is possible.
+
+#### Problem Description
+**Task:** The goal of this problem is to represent a given positive integer n as a sum of as many pairwise
+distinct positive integers as possible. That is, to find the maximum k such that n can be written as
+a_1 + a_2 + · · · + a_k where a_1 , . . . , a_k are positive integers and a_i != a_j for all 1 ≤ i < j ≤ k.
+**Input Format:** The input consists of a single integer n.
+**Constraints:** 1 ≤ n ≤ 10^9 .
+**Output Format:** In the first line, output the maximum number k such that n can be represented as a sum
+of k pairwise distinct positive integers. In the second line, output k pairwise distinct positive integers
+that sum up to n (if there are many such representations, output any of them).
+
+#### Sample 1
+
+*Input:*
+6
+
+*Output:*
+3
+1 2 3
+
+#### Sample 2
+
+*Input:*
+8
+
+*Output:*
+3
+1 2 5
+
+#### Sample 3
+
+*Input:*
+2
+
+*Output:*
+1
+2
+
+#### Implementation in Python
+
+'''

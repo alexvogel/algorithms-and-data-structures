@@ -88,3 +88,60 @@ if __name__ == "__main__":
             print(lcs2(a, b, solutiontable=True))
         else:
             print(lcs2(a, b))
+
+
+
+# original programming assignment
+
+'''
+### 5.4 Longest Common Subsequence of Two Sequences
+
+#### Problem Introduction
+Compute the length of a longest common subsequence of three sequences.
+
+#### Problem Description
+**Task:** Given two sequences A = (a_1 , a_2 , . . . , a_n ) and B = (b_1 , b_2 , . . . , b_m ), find the length of their longest
+common subsequence, i.e., the largest non-negative integer p such that there exist indices 1 ≤ i_1 < i_2 < · · · < i_p ≤ n and 1 ≤ j_1 < j_2 < · · · < j_p ≤ m, such that a_i_1 = b_j_1 , . . . , a_i_p = b_j_p .
+**Input Format:** First line: n. Second line: a_1 , a_2 , . . . , a_n . Third line: m. Fourth line: b_1 , b_2 , . . . , b_m .
+**Constraints:** 1 ≤ n, m ≤ 100; −10^9 < a_i , b_i < 10^9 .
+**Output Format:** Output p.
+
+#### Sample 1
+
+*Input:*
+3
+2 7 5
+2
+2 5
+
+*Output:*
+2
+A common subsequence of length 2 is (2, 5).
+
+#### Sample 2
+
+*Input:*
+1
+7
+4
+1 2 3 4
+
+*Output:*
+0
+The two sequences do not share elements.
+
+#### Sample 3
+
+*Input:*
+4
+2 7 8 3
+4
+5 2 8 7
+
+*Output:*
+2
+One common subsequence is (2, 7). Another one is (2, 8).
+
+#### Implementation in Python
+
+'''

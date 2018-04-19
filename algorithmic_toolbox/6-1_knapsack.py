@@ -103,3 +103,33 @@ if __name__ == "__main__":
             print(knapsack_dynamic_programming(W, w, solutiontable=True))
         else:
             print(knapsack_dynamic_programming(W, w, solutiontable=False))
+
+
+
+# original programming assignment
+
+'''
+### 6.1 Maximum Amount of Gold
+
+#### Problem Introduction
+You are given a set of bars of gold and your goal is to take as much gold as possible into your bag. There is just one copy of each bar and for each bar you can either take it or not (hence you cannot take a fraction of a bar).
+
+#### Problem Description
+**Task:** Given n gold bars, find the maximum weight of gold that fits into a bag of capacity W .
+**Input Format:** The first line of the input contains the capacity W of a knapsack and the number n of bars of gold. The next line contains n integers w_0 , w_1 , . . . , w_n−1 defining the weights of the bars of gold.
+**Constraints:** 1 ≤ W ≤ 10^4 ; 1 ≤ n ≤ 300; 0 ≤ w_0 , . . . , w_n−1 ≤ 10^5 .
+**Output Format:** Output the maximum weight of gold that fits into a knapsack of capacity W .
+
+#### Sample 1
+
+*Input:*
+10 3
+1 4 8
+
+*Output:*
+9
+Here, the sum of the weights of the first and the last bar is equal to 9.
+
+#### Implementation in Python
+
+'''

@@ -165,3 +165,42 @@ if __name__ == '__main__':
         input = sys.stdin.read();
         n, m = map(int, input.split())
         print(fibonacciHugeFast(n, m))
+
+
+
+# original programming assignment
+
+'''
+### 2.5 Fibonacci Number Again
+
+#### Problem Introduction
+In this problem, your goal is to compute F_n modulo m, where n may be really huge: up to 10^18 . For such values of n, an algorithm looping for n iterations will not fit into one second for sure. Therefore we need to avoid such a loop.
+To get an idea how to solve this problem without going through all F i for i from 0 to n, let’s see what happens when m is small — say, m = 2 or m = 3.
+
+#### Problem Description
+**Task:** Given two integers n and m, output F_n mod m (that is, the remainder of F_n when divided by m).
+**Input Format:** The input consists of two integers n and m given on the same line (separated by a space).
+**Constraints:** 1 ≤ n ≤ 10^18 , 2 ≤ m ≤ 10^5 .
+**Output Format:** Output F_n mod m.
+
+#### Sample 1
+
+*Input*:
+239 1000
+
+*Output:*
+161
+F_239 mod 1000 = 39679027332006820581608740953902289877834488152161 (mod 1000) = 161.
+
+#### Sample 2
+
+*Input*:
+2816213588 30524
+
+*Output*:
+10249
+F_2816213588 does not fit into one page of this file, but F_2816213588 mod 30524 = 10249.
+
+#### Implementation in Python
+
+'''

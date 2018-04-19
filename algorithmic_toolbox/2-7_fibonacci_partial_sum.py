@@ -144,3 +144,51 @@ if __name__ == '__main__':
         input = sys.stdin.read();
         from_, to = map(int, input.split())
         print(fibonacci_partial_sum_fast(from_, to))
+
+
+
+# original programming assignment
+
+'''
+### 2.7 Last Digit of the Sum of Fibonacci Numbers Again
+
+#### Problem Introduction
+Now, we would like to find the last digit of a partial sum of Fibonacci numbers: F m + F m+1 + · · · + F n .
+
+#### Problem Description
+**Task:** Given two non-negative integers m and n, where m ≤ n, find the last digit of the sum F_m + F_m+1 +
+· · · + F_n .
+**Input Format:** The input consists of two non-negative integers m and n separated by a space.
+**Constraints:** 0 ≤ m ≤ n ≤ 10^18 .
+**Output Format:** Output the last digit of F_m + F_m+1 + · · · + F_n .
+
+#### Sample 1
+
+*Input:*
+37
+
+*Output:*
+1
+F_3 + F_4 + F_5 + F_6 + F_7 = 2 + 3 + 5 + 8 + 13 = 31.
+
+#### Sample 2
+
+*Input:*
+10 10
+
+*Output:*
+5
+F_10 = 55.
+
+#### Sample 3
+
+*Input:*
+10 200
+
+*Output:*
+2
+F_10 + F_11 + · · · + F_200 = 734544867157818093234908902110449296423262
+
+#### Implementation in Python
+
+'''

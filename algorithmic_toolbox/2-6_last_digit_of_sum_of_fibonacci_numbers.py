@@ -110,3 +110,44 @@ if __name__ == '__main__':
         input = sys.stdin.read();
         n = int(input)
         print(fibonacci_sum_fast(n))
+
+
+
+# original programming assignment
+
+'''
+### 2.6 Last Digit of the Sum of Fibonacci Numbers
+
+#### Problem Introduction
+The goal in this problem is to find the last digit of a sum of the first n Fibonacci numbers.
+
+#### Problem Description
+**Task:** Given an integer n, find the last digit of the sum F_0 + F_1 + · · · + F_n .
+**Input Format:** The input consists of a single integer n.
+**Constraints:** 0 ≤ n ≤ 10^14 .
+**Output Format:** Output the last digit of F_0 + F_1 + · · · + F_n .
+
+#### Sample 1
+
+*Input*:
+3
+
+*Output:*
+4
+F_0 + F_1 + F_2 + F_3 = 0 + 1 + 1 + 2 = 4.
+
+#### Sample 2
+
+*Input*:
+100
+
+*Output:*
+5
+The sum is equal to 927372692193078999175, the last digit is 5.
+
+#### What To Do
+Instead of computing this sum in a loop, try to come up with a formula for F_0 + F_1 + F_2 + · · · + F_n . For   this, play with small values of n. Then, use a solution for the previous problem.
+
+#### Implementation in Python
+
+'''

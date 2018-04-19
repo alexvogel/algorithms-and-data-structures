@@ -67,3 +67,45 @@ if __name__ == '__main__':
         assert(len(a) == n)
 
         print(maxPairwiseProductFast(a))
+
+
+
+# original programming assignment
+
+'''
+### 1.1 Maximum Pairwise Product Problem
+**Task:** Find the maximum product of two distinct numbers in a sequence of non-negative integers.
+
+**Input:**    A sequence of non-negative integers.
+**Output:**   The maximum value that can be obtained by multiplying twi different elements from the sequence.
+
+Given a sequence of non-negative integers a_1 , . . . , a_n , compute
+max a_i · a_j .
+1 ≤ i, j ≤ n
+Note that i and j should be different, though it may be the case that a_i = a_j .
+**Input format:** The first line contains an integer n. The next line contains
+n non-negative integers a_1 , . . . , a_n (separated by spaces).
+**Output format:** The maximum pairwise product.
+Constraints. 2 ≤ n ≤ 2 · 10^5 ; 0 ≤ a_1 , . . . , a_n ≤ 2 · 10^5 .
+
+#### Sample 1
+
+*Input*:
+3
+1 2 3
+
+*Output*:
+6
+
+#### Sample 2
+
+*Input:*
+10
+7 5 14 2 8 8 10 1 2 3
+
+*Output:*
+140
+
+#### Implementation in Python
+
+'''

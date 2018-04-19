@@ -214,3 +214,41 @@ if __name__ == "__main__":
         
         for x in a:
             print(x, end=' ')
+
+
+
+# original programming assignment
+
+'''
+### 4.3 Improving Quick Sort
+
+#### Problem Introduction
+The goal in this problem is to redesign a given implementation of the random-
+ized quick sort algorithm so that it works fast even on sequences containing
+many equal elements.
+
+#### Problem Description
+**Task:** To force the given implementation of the quick sort algorithm to efficiently process sequences with
+few unique elements, your goal is replace a 2-way partition with a 3-way partition. That is, your new
+partition procedure should partition the array into three parts: < x part, = x part, and > x part.
+**Input Format:** The first line of the input contains an integer n. The next line contains a sequence of n
+integers a_0 , a_1 , . . . , a_n−1 .
+**Constraints:** 1 ≤ n ≤ 10^5 ; 1 ≤ a_i ≤ 10^9 for all 0 ≤ i < n.
+**Output Format:** Output this sequence sorted in non-decreasing order.
+
+#### Sample 1
+
+*Input:*
+5
+2 3 9 2 2
+
+*Output:*
+2 2 2 3 9
+
+#### What To Do
+Implement a 3-way partition procedure and then replace a call to the 2-way partition procedure by a call to
+the 3-way partition procedure.
+
+#### Implementation in Python
+
+'''

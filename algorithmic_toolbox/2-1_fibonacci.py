@@ -81,3 +81,37 @@ if __name__ == '__main__':
         n = int(input())
 
         print(calcFibonacciNumberFast(n))
+
+
+
+# original programming assignment
+
+'''
+### 2.1 Fibonacci Number
+
+#### Problem Introduction
+The definition of Fibonacci sequence is: F_0 = 0, F_1 = 1, and F_i = F_i−1 + F_i−2 for i ≥ 2.
+
+```
+Fibonacci(n):
+    if n ≤ 1:
+        return n
+    return Fibonacci(n − 1) + Fibonacci(n − 2)
+```
+
+The input consists of a single integer n.
+**Constraints:** 0 ≤ n ≤ 45.
+**Output Format:** Output F_n .
+
+#### Sample 1
+
+*Input*:
+10
+
+*Output*:
+55
+F_10 = 55.
+
+#### Implementation in Python
+
+'''
