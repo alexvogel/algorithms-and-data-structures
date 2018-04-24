@@ -9,3 +9,4 @@
 | 3.2 | Priority Queues, Disjoint Sets | Heap | Parallel Processing | [3-2_job_queue.py](3-2_job_queue.py) |
 | 3.3 | Priority Queues, Disjoint Sets | Disjoint Sets | Parallel Processing | [3-3_merging_tables.py](3-3_merging_tables.py) |
 | 4.1 | Hashes, Searching Patterns | Hash | Phone Book | [4-1_phone_book.py](4-1_phone_book.py) |
+| 4.2 | Hashes, Searching Patterns | Hash | Hashing With Chains | [4-2_hash_chains.py](4-2_hash_chains.py) |
