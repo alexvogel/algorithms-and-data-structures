@@ -11,3 +11,4 @@
 | 4.1 | Hashes, Searching Patterns | Hash | Phone Book | [4-1_phone_book.py](4-1_phone_book.py) |
 | 4.2 | Hashes, Searching Patterns | Hash | Hashing With Chains | [4-2_hash_chains.py](4-2_hash_chains.py) |
 | 4.3 | Hashes, Searching Patterns | Hash | Find Pattern In Text | [4-3_hash_substring.py](4-3_hash_substring.py) |
+| 6.1 | Binary Search Trees, AVL Trees | Binary Search Tree | Binary Search Tree Traversals | [6-1_tree_orders.py](6-1_tree_orders.py) |
