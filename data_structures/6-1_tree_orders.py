@@ -184,11 +184,11 @@ In this problem you will implement in-order, pre-order and post-order traversals
 1 3 2 5 4  
 
 **Explanation:**  
-         4
-        / \
-       2   5
-      / \
-     1   3
+         4  
+        / \  
+       2   5  
+      / \  
+     1   3  
 
 #### Sample 2
 
