@@ -16,6 +16,9 @@ class Graph(object):
     edgeList = None
     visited = None
     count_vertices = 0
+    cc = []
+
+    cc_counter = 0
 
     '''
         constructor
@@ -35,6 +38,8 @@ class Graph(object):
 
         self.visited = [False] * len(self.adjacencyList)
 
+        self.cc = [None] * len(self.adjacencyList)
+
         self.count_vertices = count_vertices
 
     '''
@@ -44,13 +49,13 @@ class Graph(object):
         x: starting vertex
         y: ending vertex
     '''
-    def reach(self, x, y):
+    def reach(self, x, y=None):
 
         self.visited[x] = True
-
+        self.cc[x] = self.cc_counter
 #        print('standing on vertex', x+1, 'looking for vertex', y+1, 'connections are', [entry+1 for entry in self.adjacencyList[x]])
 
-        if y in self.adjacencyList[x]:
+        if y is not None and y in self.adjacencyList[x]:
 #            print('SUCCESS: found verex', y+1, '- coming from vertex', x+1)
             return 1
 
@@ -61,6 +66,19 @@ class Graph(object):
 
 #        print('reached a dead end at vertex', x+1)
         return 0
+
+
+    def connectedComponents(self):
+        self.cc_counter = 1
+
+        self.visited = [False] * len(self.adjacencyList)
+
+        for i in range(0, self.count_vertices):
+            if not self.visited[i]:
+                self.reach(i)
+                self.cc_counter = self.cc_counter + 1
+
+        return self.cc_counter-1
 
     def plot(self, pngfile):
 
