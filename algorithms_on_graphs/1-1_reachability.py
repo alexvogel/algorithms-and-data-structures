@@ -83,7 +83,7 @@ class Graph(object):
     def plot(self, pngfile):
 
         # create a pydot graph
-        pydot_graph = pydot.Dot(graph_type="digraph")
+        pydot_graph = pydot.Dot(graph_type="graph")
 
         # add all vertices
         for i in range(0, self.count_vertices):

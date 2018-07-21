@@ -83,7 +83,7 @@ class Graph(object):
     def plot(self, pngfile):
 
         # create a pydot graph
-        pydot_graph = pydot.Dot(graph_type="digraph")
+        pydot_graph = pydot.Dot(graph_type="graph")
 
         # add all vertices
         for i in range(0, self.count_vertices):
@@ -96,10 +96,6 @@ class Graph(object):
 
         pydot_graph.write_png(pngfile)
 
-def number_of_components(adj):
-    result = 0
-    #write your code here
-    return result
 
 if __name__ == '__main__':
     input = sys.stdin.read()
